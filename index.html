@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loruki | Cloud Hosting for Everyone</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./utilities.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css"> <!--link style sheet 1-->
+    <link rel="stylesheet" href="./utilities.css"> <!--link style sheet for utilities and classes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--font-awesome icons-->
 
 </head>
 <body>
     <!--Navbar-->
     <div class="navbar">
-        <div class="container flex">
+        <div class="container flex"> <!--container flex - split logo and menu links-->
             <h1 class="logo">Loruki.</h1>
         <nav>
             <ul>
@@ -29,7 +29,7 @@
 
     <!--Showcase-->
     <section class="showcase">
-        <div class="container grid">
+        <div class="container grid"> <!--Container grid with 2 lower divs - showcase-text & showcase-form-->
             <div class="showcase-text">
                 <h1>Easier Deployment</h1>
                 <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to try a demo of our platform</p>
@@ -38,11 +38,11 @@
             <div class="showcase-form">
                 <div class="showcase-form card">
                     <h2>Request Demo</h2>
-                <form name="contact" method="POST" netlify-honeypod="bot-field" data-netlify="true">
+                <form name="contact" method="POST" netlify-honeypod="bot-field" data-netlify="true"> <!--netlify anti spam invisable field (added css to make height 0 and not appear on page)-->
                 <input type="hidden" name="form-name" value="contact">
                 <p class="hidden">
                     <label>
-                      Don’t fill this out if you’re human: <input name="bot-field" />
+                      Don’t fill this out if you’re human: <input name="bot-field" /> <!--netlify code from docs-->
                     </label>
                   </p>
                 
@@ -56,7 +56,7 @@
                         <input type="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-control">
-                        <input type="submit" value="Send" class="btn btn-primary">
+                        <input type="submit" value="Send" class="btn btn-primary"> <!--button class set in css utilities-->
                     </div>
 
                 </form>
